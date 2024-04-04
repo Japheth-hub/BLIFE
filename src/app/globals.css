@@ -2,32 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.img-background{
+    z-index: 0;
+}
+.img-2{
+    position: absolute;
+    width: 35%;
+    top: 100px;
+    right: 100px;
+    z-index: 2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.star-selector {
+    display: flex;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.like{
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    border: 1px solid rgb(235, 235, 235);
+    padding: 3px 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+}
+.descuento{
+    position: absolute;
+    right: -20px;
+    top: 50px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(243, 159, 173);
+    color: white;
+    padding: 3px 8px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btnAgregar:hover{
+    background-color: rgb(251, 146, 60);
 }
