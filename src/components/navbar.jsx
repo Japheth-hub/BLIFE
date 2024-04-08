@@ -24,11 +24,11 @@ export default function Navbar({ count }) {
         </li>
         <li className="mx-5 iconUser">
           {user ? (
-            <Link href="https://blife2.vercel.app/api/auth/logout">
+            <Link href="/api/auth/logout">
               <img src={user.picture} width="20px" alt="User" />
             </Link>
           ) : (
-            <Link href="https://blife2.vercel.app/api/auth/login">
+            <Link href="/api/auth/login">
               <img src="/user.png" width="20px" alt="User" />
             </Link>
           )}
