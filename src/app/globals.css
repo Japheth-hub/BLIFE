@@ -17,6 +17,14 @@
     display: flex;
 }
 
+.links li{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.links li:hover{
+    transform: scale(1.2);
+}
+
 .like{
     position: absolute;
     right: -20px;
@@ -34,6 +42,9 @@
         font-size: 0.8rem;
     }
 }
+.iconUser img{
+    border-radius: 50%;
+}
 .descuento{
     position: absolute;
     right: -20px;
@@ -48,4 +59,16 @@
 
 .btnAgregar:hover{
     background-color: rgb(251, 146, 60);
+}
+
+.count{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 0.5rem;
+    background-color: red;
 }
